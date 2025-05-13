@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Leaf, History } from 'lucide-react';
+import { Leaf, History, Map } from 'lucide-react';
 
 const Header = () => {
     const navigate = useNavigate();
@@ -64,6 +64,15 @@ const Header = () => {
                             >
                                 <History className="h-4 w-4 mr-1" />
                                 History
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                onClick={() => navigate('/disease-map')}
+                                className="flex items-center text-white hover:text-green-200 focus:outline-none focus:ring-2 focus:ring-green-300 transition duration-200"
+                            >
+                                <Map className="h-4 w-4 mr-1" />
+                                Disease Map
                             </button>
                         </li>
                     </ul>

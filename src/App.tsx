@@ -10,6 +10,7 @@ import GuideSection from './components/GuideSection';
 import LoginForm from './components/auth/LoginForm';
 import RegisterForm from './components/auth/RegisterForm';
 import HistoryPage from './components/history/HistoryPage';
+import DiseaseMap from './components/DiseaseMap';
 import { ProcessedResult } from './types';
 import { processImage } from './services/processImage';
 import { ArrowDownCircle } from 'lucide-react';
@@ -140,6 +141,7 @@ function App() {
                     <Route path="/login" element={<LoginForm />} />
                     <Route path="/register" element={<RegisterForm />} />
                     <Route path="/history" element={<HistoryPage />} />
+                    <Route path="/disease-map" element={<DiseaseMap />} />
                 </Routes>
                 <Footer />
             </div>
