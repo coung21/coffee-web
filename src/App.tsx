@@ -9,6 +9,7 @@ import AboutSection from './components/AboutSection';
 import GuideSection from './components/GuideSection';
 import LoginForm from './components/auth/LoginForm';
 import RegisterForm from './components/auth/RegisterForm';
+import HistoryPage from './components/history/HistoryPage';
 import { ProcessedResult } from './types';
 import { processImage } from './services/processImage';
 import { ArrowDownCircle } from 'lucide-react';
@@ -138,6 +139,7 @@ function App() {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/login" element={<LoginForm />} />
                     <Route path="/register" element={<RegisterForm />} />
+                    <Route path="/history" element={<HistoryPage />} />
                 </Routes>
                 <Footer />
             </div>
